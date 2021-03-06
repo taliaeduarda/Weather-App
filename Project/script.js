@@ -1,6 +1,6 @@
-let tempDescription = document.querySelector('.temperature-description')
-let tempDegree = document.querySelector('.temperature-degree')
-let locTimezone = document.querySelector('.location-timezone')
+let tempDescription = document.querySelector(".temperature-description");
+let tempDegree = document.querySelector(".temperature-degree");
+let locTimezone = document.querySelector(".location-timezone");
 
 const weatherApp = function () {
   let long;
@@ -19,19 +19,16 @@ const weatherApp = function () {
           return response.json();
         })
         .then(function (data) {
-            console.log(data)
-          const { temp } = data.main
-          const { main } = data.weather[0]
-        
-          tempDegree.textContent = temp + '°'
-          tempDescription.textContent = main
-          locTimezone.textContent = data.name
-          
-        })
-    })
+          console.log(data);
+          const { temp } = data.main;
+          const { main } = data.weather[0];
+
+          tempDegree.textContent = temp + "°";
+          tempDescription.textContent = main;
+          locTimezone.textContent = data.name;
+        });
+    });
   }
-
-
 };
 
 window.addEventListener("load", weatherApp);
