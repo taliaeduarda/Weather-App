@@ -21,16 +21,17 @@ function weatherApp() {
         })
         .then(function (data) {
           console.log(data);
-          const { temp } = data.main;
+          let { temp } = data.main;
           let { description } = data.weather[0];
           let { main } = data.weather[0];
+          temp = parseInt(temp)
 
           tempDegree.textContent = temp + "°";
           tempDescription.textContent = description;
           locTimezone.textContent = data.name;
 
           if (main === 'Clear') {
-            icon.classList.add("fas fa-cloud");
+            icon.innerHTML = '<i class="fas fa-cloud" aria-hidden="true"></i>';
           }
 
         });
