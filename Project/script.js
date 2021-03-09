@@ -21,13 +21,28 @@ const weatherApp = function () {
         .then(function (data) {
           console.log(data);
           const { temp } = data.main;
-          const { main } = data.weather[0];
+          let { description } = data.weather[0];
+          let { description: icon } = data.weather[0];
+          icon = icon.replace(/ /g, '_').toUpperCase()
+          console.log(icon)
 
           tempDegree.textContent = temp + "°";
-          tempDescription.textContent = main;
+          tempDescription.textContent = description;
           locTimezone.textContent = data.name;
+
+          setIcons(icon, document.querySelector('.icon'))
+          
+          
         });
     });
+  }
+
+  function setIcons(icon, iconID) {
+    const skycons = new Skycons({color: "black"})
+    const currentIcon = icon
+    skycons.play()
+    return skycons.set(iconID, Skycons[currentIcon])
+    
   }
 };
 
