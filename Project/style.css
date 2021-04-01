@@ -1,60 +1,53 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    background-color: #e3e4e6;
-    background: url('https://images.unsplash.com/photo-1512923927402-a9867a68180e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    align-items: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  background-color: #e3e4e6;
+  background: url("https://images.unsplash.com/photo-1587947910798-fb4e9a0452cc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
 .container {
-    height: 70vh;
-    width: 50vh;
-    margin: auto;
-    background: #f6f5fa;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 30px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    opacity: 0.8;
+  height: 80vh;
+  width: 50vh;
+  margin: auto;
+  background: #f6f5fa;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+  position: relative;
 }
-
 
 h1 {
-    font-size: 3em;
-    font-weight: 400;
-    position: relative;
-    bottom: 30px;
-    letter-spacing: 1.5px;
+  font-size: 5em;
+  font-weight: 200;
+  letter-spacing: 1.5px;
 }
 
-h2 {
-    font-size: 1em;
-    color: #A7A2A9;
-    font-weight: 600;
+.location-timezone {
+  font-weight: 500;
+  font-size: 1em;
 }
 
 .temperature-description {
-    position: relative;
-    bottom: 15px;
-    letter-spacing: 1px;
-    font-size: 1.5em;
+  letter-spacing: 0.8px;
+  padding: 10px 0px;
 }
 
 .icon {
-    position: relative;
-    bottom: 200px;
-    left: 120px;
-    font-size: 180px;
-    color: white;
+  font-size: 5em;
+  color: rgb(204, 139, 140);
+  filter: drop-shadow(0px 5px 3px #2f4650);
 }
-
-

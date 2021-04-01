@@ -22,15 +22,14 @@ function weatherApp() {
         .then(function (data) {
           console.log(data);
           let { temp } = data.main;
-          let { description } = data.weather[0];
-          let { main } = data.weather[0];
+          let { description, main } = data.weather[0];
           temp = parseInt(temp)
 
           tempDegree.textContent = temp + "°";
           tempDescription.textContent = description;
-          locTimezone.textContent = data.name;
+          locTimezone.textContent = `${data.name}, ${data.sys.country}`
 
-          if (main === 'Clear') {
+          if (main === 'Clouds') {
             icon.innerHTML = '<i class="fas fa-cloud" aria-hidden="true"></i>';
           }
 

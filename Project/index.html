@@ -9,7 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -17,21 +22,19 @@
   </head>
   <body>
     <section class="container">
-      <div class="temperature-icon">
-        <div class="icon"></div>
-      </div>
+      <!-- <input type="text" id="city" placeholder="Another city"> -->
 
-      <div class="temperature">
-        <div class="degree-section">
-          <h1 class="temperature-degree">34</h1>
-        </div>
-
-        <div class="temperature-description">Its friggin cold</div>
+      <div class="degree-section">
+        <h1 class="temperature-degree">34</h1>
         <div class="location">
-          <h2 class="location-timezone">Timezone</h2>
+          <p class="location-timezone">Timezone</p>
+
+          <div class="temperature-description">Its friggin cold</div>
         </div>
+        <div class="temperature-icon"><span class="icon"></span></div>
       </div>
     </section>
+
     <script src="script.js"></script>
   </body>
 </html>
