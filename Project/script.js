@@ -36,22 +36,6 @@ function weatherApp() {
         });
     });
   }
-
-  // if (main === 'Thunderstorm') {
-  //   weatherIcon = 
-  // // } else if (main === 'Drizzle') {
-  // //   weatherIcon = <FontAwesomeIcon icon={faCloudRain} />;
-  // // } else if (main === 'Rain') {
-  // //   weatherIcon = <FontAwesomeIcon icon={faCloudShowersHeavy} />;
-  // // } else if (main === 'Snow') {
-  // //   weatherIcon = <FontAwesomeIcon icon={faSnowflake} />;
-  // // } else if (main === 'Clear') {
-  // //   weatherIcon = <FontAwesomeIcon icon={faSun} />;
-  // } else if (main === 'Clouds') {
-  //   weatherIcon = <FontAwesomeIcon icon={faCloud} />;
-  // } else {
-  //   weatherIcon = <FontAwesomeIcon icon={faSmog} />;
-  // }
 }
 
 window.addEventListener("load", weatherApp);
